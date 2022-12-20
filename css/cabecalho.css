@@ -1,0 +1,119 @@
+
+#cabecalho a {
+    color: #c8db93;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#cabecalho__menu a:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+#logo-tobias {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-image: url('../img/logo.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#cabecalho {
+    align-items: center;
+    background: #474d36;
+    box-sizing: border-box;
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#cabecalho__menu___lista {
+    display: flex;
+    gap: .9rem;
+    list-style: none;
+}
+
+#cabecalho__menu___lista a {
+    display: block;
+    padding: .9rem;
+}
+
+#cabecalho__menu___mobile {
+    display:none;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #cabecalho {
+        justify-content: space-between;
+    }
+
+    #cabecalho__menu___lista {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background: #474d36;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .6s;
+        z-index: 1000;
+    }
+    #cabecalho__menu.active #cabecalho__menu___lista {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #cabecalho__menu {
+        display: flex;
+        align-items: center;
+    }
+    #cabecalho__menu___lista a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(211, 255, 191, 0.05);
+        color: hsl(76, 50%, 72%);
+    }
+    #cabecalho__menu___mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #c8db93;
+    }
+    #cabecalho__menu___burguer {
+        border-top: 2px solid;
+        width: 20px;
+        color: #c8db93;
+    }
+    #cabecalho__menu___burguer::after, #cabecalho__menu___burguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #cabecalho__menu.active #cabecalho__menu___burguer {
+        border-top-color: transparent;
+    }
+    #cabecalho__menu.active #cabecalho__menu___burguer::before {
+        transform: rotate(135deg);
+    }
+    #cabecalho__menu.active #cabecalho__menu___burguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}

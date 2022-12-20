@@ -1,0 +1,15 @@
+.rodape {
+    padding: 22px;
+    border-top: 0.1px solid #474d36;
+}
+
+.rodape-imagem {
+    height: 58px;
+    display: block;
+    margin: 0 auto;
+}
+
+#developed_by {
+    position: static;
+    text-align: center;
+}

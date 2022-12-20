@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fruktur&family=Roboto+Mono:wght@400;700&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background: #c8db93;
+}
+
+.conteudo {
+    border-top: 0.4px solid #474d36;
+    border-bottom: 0.5px;
+    margin-bottom: 68px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.presentes {
+   width: 100%;
+   margin: 0 auto;
+   padding: 50px 0;
+}
+.presentes li:hover {
+    border: 1px solid #ffffff;
+}
+.presentes li {
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    margin: 0 1,5%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border: 10px solid #070a02;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+}   
+.presentes h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.presente-preco {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.presentes a {
+    text-decoration: none;
+    color: #000000;
+ }
+
+.presentear {
+    font-size: 20px;
+    border: 1px solid #070a02;
+    border-radius: 7px;
+    border-width: 1px;
+    width: 170px;
+    height: 40px;
+    padding: 1px;
+    align-self: center;
+    cursor: pointer;
+    background: #c8db93;
+    font-family: Roboto Mono;
+}
+
+
+
+
+.rodape {
+    padding: 22px;
+    border-top: 0.4px solid #474d36;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+@media screen and (max-width: 631px) {
+    .presentes li, .presentes {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentes {
+        width: auto;
+        margin: 0 auto;
+        padding: 50px 0;
+        align-items: center;
+     }
+    .presentes li {
+        margin: 0 1,5%;
+        padding: 15px 10px;
+        margin-top: 40px;
+        margin-left: 0;
+        width: 50%;
+    }
+    .presentes li p {
+        text-align: center;
+    }
+    .presentear {
+        font-size: 15px;
+        border: 1px solid #070a02;
+        border-radius: 7px;
+        border-width: 1px;
+        width: auto;
+        padding: 5px;
+        align-self: center;
+    }
+}
+
+
+@media screen and (max-width: 937px) {
+    .presentes {
+        width: auto;
+        padding: 50px 0;
+     }
+
+    .presentes li {
+        text-align: center;
+        width: 45%;
+    }
+}

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fruktur&family=Roboto+Mono:wght@400;700&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    position:relative;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background: #c8db93;
+}
+
+.conteudo {
+    border-top: 0.4px solid #474d36;
+    border-bottom: 0.5px;
+    margin-bottom: 68px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    border-top: 400px;
+} 
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 54px;
+    color: #474d36;
+    padding-top: 30px;
+} 
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 30px;
+    color:	#474d36;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #474d36;
+    padding-top: 48px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #474d36;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #474d36;
+    padding-left: 300px;
+    padding-right: 300px;
+    text-align:justify;
+    border: 1px solid #474d36;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.rodape {
+    padding: 22px;
+    border-top: 0.4px solid #474d36;
+}
+
+.rodape-imagem {
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.nubank {
+    background-size: auto;
+    height: 22px;
+    width: 60px;
+    margin-left: 85px;
+}
+.bradesco {
+    display: inline-block;
+    background-size: auto;
+    height: 30px;
+    width: 90px;
+    margin-left: 68px;
+}
