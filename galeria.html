@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/cabecalho.css">
     <link rel="stylesheet" type="text/css" href="./css/rodape.css">
+    <link rel="stylesheet" type="text/css" href="./css/carrossel.css">
     <script src="main.js" defer></script>
     <title>João & Isa | Apoie nosso casamento</title>
 </head>
@@ -26,22 +27,28 @@
     </header>
 
     <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">João & Isabela</h1>
-                <h2 class="conteudo-principal-escrito-subtitulo">Apoie nosso casamento</h2>
-                <a href="doe.html"><button class="conteudo-principal-escrito-botao">Contribuir</a>
+        <div class="container__slider">
+            <button id="prev-button"><img src="./img/casal/arrow.png" alt="prev-button"></button>
+            <div class="container__images">
+                <img src="./img/casal/1.jpeg" class="slider on">
+                <img src="./img/casal/2.jpeg" class="slider">
+                <img src="./img/casal/3.jpeg" class="slider">
+                <img src="./img/casal/4.jpeg" class="slider">
+                <img src="./img/casal/5.jpeg" class="slider">
+                <img src="./img/casal/6.jpeg" class="slider">
+                <img src="./img/casal/7.jpeg" class="slider">
+                <img src="./img/casal/8.jpeg" class="slider">
+                <img src="./img/casal/9.jpeg" class="slider">
+                <img src="./img/casal/10.jpeg" class="slider">
+                <img src="./img/casal/11.jpeg" class="slider">
+                <img src="./img/casal/12.jpeg" class="slider">
+                <img src="./img/casal/13.jpeg" class="slider">
+                <img src="./img/casal/14.jpeg" class="slider">
+                <img src="./img/casal/15.jpeg" class="slider">
             </div>
-            <img class="conteudo-principal-imagem" src="./img/amor.png" alt="Imagem Principal João e Isabela">
-        </section>
-
-        <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">Qual o objetivo desse site?</h3>
-            <p class="conteudo-secundario-paragrafo">1. Inspirar outros casais que possuem o mesmo propósito que o nosso;</p>
-            <p class="conteudo-secundario-paragrafo">2. Eu ( João ) amo a Isabela, e codei esse site porquê é também uma homenagem à ela.</p>
-            <p class="conteudo-secundario-paragrafo">3. Conseguir apoio para o nosso sonho.</p>
-        </section>
-    </main>
+            <button id="next-button"><img src="./img/casal/arrow.png" alt="next-button"></button>
+        </div>
+       
 
     <footer class="rodape">
         <img class="rodape-imagem" src="./img/amorfooter.png">
@@ -50,6 +57,7 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
