@@ -40,7 +40,7 @@ body {
 .conteudo-principal-escrito-titulo {
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    font-size: 94px;
+    font-size: 104px;
     color: #474d36;
     margin: 10px 0px 0px 10px;
 } 
@@ -91,6 +91,7 @@ body {
     padding: 10px;
     gap: 24px;
     margin-top: 48px;
+    margin-bottom: 20px;
 }
 
 .conteudo-secundario-titulo {
@@ -98,7 +99,7 @@ body {
     padding-top: 48px;
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 36px;
     color: #474d36;
     margin-bottom: 16px;
 }
@@ -108,6 +109,30 @@ body {
     font-weight: 300;
     font-size: 18px;
     color: #474d36;
+}
+                
+.conteudo-principal-escrito-botao2 {
+    background-color: #474d36;
+    width: 335px;
+    height: 47px;
+    color: #ffffff;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 10px 0px 0px 10px;
+}
+
+
+.conteudo-principal-escrito-botao2:hover {
+    background-color: #73814f;
+    color: #fff;
+    cursor: pointer;
+}
+.conteudo-principal-escrito-botao2 a {
+    color: #fff;
 }
 
 /*---------------------------------------------------------------------------
@@ -124,7 +149,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .conteudo-principal-escrito-titulo {
-        font-size:30px;
+        font-size:45px;
         margin: 15px 0px 0px 15px;
     }
     .conteudo-principal-escrito-subtitulo {
